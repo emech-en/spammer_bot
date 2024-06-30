@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  spam-filter-bot:
+    build: .
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+      - PERSONAL_MAX_PER_MINUTE=${PERSONAL_MAX_PER_MINUTE:-5}
+      - FORWARD_MAX_PER_HOUR=${FORWARD_MAX_PER_HOUR:-1}
+      - FORWARD_MAX_PER_FIVE_HOURS=${FORWARD_MAX_PER_FIVE_HOURS:-3}
+      - WARNING_COOLDOWN=${WARNING_COOLDOWN:-3600}
+    restart: unless-stopped
