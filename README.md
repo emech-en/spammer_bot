@@ -1,6 +1,6 @@
 # Telegram Spam Filter Bot
 
-[فارسی](README_FA) | English
+[فارسی](README_FA.md) | English
 
 This is an intelligent spam filter bot for Telegram, built using artificial intelligence. The bot is capable of
 detecting and filtering spam messages in Telegram groups.
